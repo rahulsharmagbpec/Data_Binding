@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="person"
+            type="com.data_binding.first.data_binding.Person" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            style="@style/ROBOTO_REGULAR_NORMAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/data_binding_example"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/ROBOTO_REGULAR_NORMAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@{person.name}"
+            tools:text="Hello World!" />
+
+
+        <TextView
+            android:id="@+id/cityTextView"
+            style="@style/ROBOTO_REGULAR_NORMAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@{person.city}"
+            tools:text="Hello World!" />
+
+        <TextView
+            style="@style/ROBOTO_REGULAR_NORMAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@{person.country}"
+            tools:text="Hello World!" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Data_Binding</string>
+    <string name="data_binding_example">Data Binding Example</string>
+</resources>
